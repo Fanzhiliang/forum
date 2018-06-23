@@ -1,0 +1,192 @@
+@import url(../reset.css);
+@import url(header.css);
+/*@main
+************************************************************************************************/
+	.main{
+		width: 100%;
+		float: left;
+		margin-top: 2rem;
+		padding-top: 3rem;
+		background-color: rgb(242,242,242);
+		text-align: center;
+	}
+
+	.main .body{
+		width: 77.777777%;
+		display: inline-block;
+	}
+
+	.main .form-row{
+		width: 100%;
+		margin-bottom: 0.8rem;
+		float: left;
+	}
+
+	.main .form-row.error-tip{
+		font-size: 0.7rem;
+		color: rgb(218,46,22);
+	}
+
+	.main .form-row.error-tip a{
+		color: #26d0c1;
+	}
+
+	.main .form-row .input-frame{
+		height: 2rem;
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb(197,197,197);
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.main .form-row .input-frame.selected{
+		border-color: rgb(102,175,233);
+		box-shadow: 0px 0px 5px rgb(102,175,233);
+		-ms-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-moz-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-webkit-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-o-box-shadow: 0px 0px 5px rgb(102,175,233);
+	}
+
+	.main .form-row .input-frame.warn{
+		border-color: rgb(218,46,22);
+		box-shadow: 0px 0px 5px rgb(218,46,22);
+		-ms-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-moz-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-webkit-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-o-box-shadow: 0px 0px 5px rgb(218,46,22);
+	}
+
+	.main .form-row .input-frame label{
+		color: rgb(204,204,204);
+		height: 1rem;
+		margin: 0.5rem;
+		display: block;
+		font-size: 0.75rem;
+		letter-spacing: 0.2rem;
+		float: left;
+	}
+
+	.main .form-row .input-frame em{
+		width: 0;
+		border-left: 1px solid rgb(204,204,204);
+		height: 1.6rem;
+		display: block;
+		margin-top: 0.2rem;
+		float: left;
+	}
+
+	.main .form-row .input-frame input{	
+		width: 8rem;
+		height: 1rem;
+		margin: 0.5rem;
+		border: 0;
+		outline: 0;
+		font-size: 0.7rem;
+		color: #333;
+		float: left;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: rgb(204,204,204); opacity:1; 
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .input-frame input:-ms-input-placeholder{
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .input-frame input::-webkit-input-placeholder{
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .tc{
+		color: rgb(46,204,113);
+		font-size: 0.8rem;
+	}
+
+	.main .form-row .tl{
+		color: rgb(46,204,113);
+		float: left;
+		font-size: 0.8rem;
+	}
+
+	.main .form-row .tr{
+		color: rgb(46,204,113);
+		float: right;
+		font-size: 0.8rem;
+
+	}
+
+	.main .form-row .forget{
+		color: rgb(218,46,22);
+	}
+
+	.main .form-row button{
+		width: 100%;
+		height: 2rem;
+		background-color: #26d0c1;
+		border: 0;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 1rem;
+		letter-spacing: 1rem;
+		text-align: right;
+		padding-left: 0;
+		padding-right: 3.6rem;
+		box-shadow: 0px 0px 5px #888888;
+		-ms-box-shadow: 0px 0px 5px #888888;
+		-moz-box-shadow: 0px 0px 5px #888888;
+		-webkit-box-shadow: 0px 0px 5px #888888;
+		-o-box-shadow: 0px 0px 5px #888888;
+	}
+
+	.drag{
+		position: relative;
+	}
+
+	.drag .drag-bg{
+		width: 0;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #26d0c1;
+	}
+
+	.drag .drag-text{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	.drag .drag-text span{
+		display: inline-block;
+		line-height: 2rem;
+		font-size: 0.8rem;
+	}
+
+	.drag .drag-obj{
+		width: 2rem;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		margin-left: -1px;
+		border-radius: 5px;
+		border-left: 1px solid rgb(197,197,197);
+		border-right: 1px solid rgb(197,197,197);
+		cursor: move;
+		background-color: #fff;
+	}
+
+	.drag .drag-obj img{
+		display: inline-block;
+		height: 1rem;
+    	margin-top: 0.5rem;
+	}

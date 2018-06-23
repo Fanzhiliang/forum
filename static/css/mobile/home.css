@@ -1,0 +1,318 @@
+@import url(../reset.css);
+@import url(header.css);
+/*html,body{
+	height: 100%;
+}*/
+/*@main
+************************************************************************************************/
+	.main{
+		width: 94%;
+		float: left;
+		margin-top: 2rem;
+		background-color: rgb(242,242,242);
+		text-align: center;
+		padding: 3%;
+	}
+
+	.body{
+		border: rgb(220,220,220) 1px solid;
+		width: 100%;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+	.body .getMore{
+		color: #d3d3d3;
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+		display: inline-block;
+	}
+
+	.body .loading{
+		height: 1rem;
+		display: none;
+		position: relative;
+		top: 0.2rem;
+	}
+
+	.body .up-row{
+		width: 100%;
+		height: 6rem;
+		float: left;
+	}
+
+	.body .up-row .left-col{
+		width: 30%;
+		padding: 5%;
+		float: left;
+		display: inline-block;
+	}
+
+	.body .up-row .left-col>img{
+		width: 100%;
+		border-radius: 50%;
+	}
+
+	.body .up-row .right-col{
+		width: 60%;
+	    padding-top: 7%;
+	    float: left;
+	    text-align: left;
+	}
+
+	.body .up-row .right-col .name{
+		font-size: 0.9rem;
+	}
+
+	.body .up-row .right-col .name-text{
+		display: inline-block;
+		max-width: 5.5rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #333;
+	}
+
+	.body .up-row .right-col .name .sex{
+		display: inline-block;
+		width: 1rem;
+		vertical-align: text-top;
+		margin-top: -0.3rem;
+	}
+
+	.body .up-row .right-col .name .level{
+		display: inline-block;
+		width: 1.25rem;
+		height: 1.25rem;
+		vertical-align: text-top;
+		overflow: hidden;
+		margin-top: -0.35rem;
+	}
+
+	.body .up-row .right-col .name .level img{
+		height: 100%;
+	}
+
+	.body .up-row .right-col .credits{
+		font-size: 0.7rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.body .up-row .right-col .credits-rate{
+		width: 5rem;
+		height: 15px;
+		border: 1px solid rgb(157,193,142);
+		border-radius: 3px;
+		background-color: #fff;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.body .up-row .right-col .credits-move{
+		/*width: 50%;*/
+		height: 100%;
+		background-color: rgb(185,215,255);
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.body .up-row .right-col .rate-text{
+		width: 100%;
+		position: absolute;
+		top: -1px;
+		left: 0;
+		text-align: center;
+		font-size: 0.6rem;
+	}
+
+	.body .up-row .right-col .molecular{
+		color: #FF7F3E;
+	}
+
+	.body .up-row .right-col .denominator{
+		color: #999;
+	}
+
+	.body .up-row .right-col .btns>*{
+		font-size: 0.65rem;
+		padding: 0.2rem 0.6rem;
+		text-align: center;
+		margin-top: 0.3rem;
+		border-radius: 5px;
+	}
+
+	.body .up-row .right-col .sign-in{
+		background-color: rgb(18,150,219);
+		color: #fff;
+	}
+
+	.body .up-row .right-col .logout{
+		background-color: rgb(204,50,47);
+		color: #fff;
+	}
+
+	.body .up-row .right-col .sign-in.final{
+		display: inline;
+		color: rgb(220,220,220);
+		background-color: rgb(242,242,242);
+	}
+
+	.body .down-row{
+		width: 100%;
+		height: 2rem;
+		float: left;
+	}
+
+	.body .down-row span{
+		width: 29%;
+		height: 1rem;
+		display: inline-block;
+		float: left;
+		padding: 0.5rem 0;
+		font-size: 0.8rem;
+		margin: -2px 2% 0 2%;
+		border-bottom: 2px solid transparent;
+		cursor: pointer;
+	}
+
+	.body .down-row span.on{
+		color: #26d0c1;
+		border-bottom-color: #26d0c1;
+	}
+
+	.body .list-row{
+		width: 100%;
+		overflow-x: hidden;
+		float: left;
+	}
+
+	.body .list-row .scroll-obj{
+		width: 300%;
+		overflow: hidden;
+	}
+
+	.body .scroll-obj>*{
+		width: 33.333333333333%;
+		float: left;
+	}
+
+	.body .list-row .postings,
+	.body .list-row .replys{
+		width: 90%;
+		margin: 3% 5% 0 5%;
+		overflow: hidden;
+		display: inline-block;
+		padding-bottom: 3%;
+		border-bottom: rgb(220,220,220) 1px solid;
+	}
+
+	.body .list-row .postings .title{
+		width: 100%;
+		max-height: 2rem;
+		font-size: 0.7rem;
+		text-align: left;
+		overflow: hidden;
+		float: left;
+		margin-bottom: 0.3rem;
+		color: #333;
+	}
+
+	.body .list-row .postings .time{
+		float: left;
+		font-size: 0.6rem;
+		display: inline-block;
+		width: 50%;
+		text-align: left;
+		color: #d3d3d3;
+	}
+
+	.body .list-row .postings .reply-col{
+		float: left;
+		width: 50%;
+	}
+
+	.body .list-row .postings .reply-col img{
+		width: 0.8rem;
+		float: right;
+	}
+
+	.body .list-row .postings .reply-col .reply-count{
+		float: right;
+		font-size: 0.6rem;
+		color: #d3d3d3;
+	}
+
+	.body .list-row .replys .post span,
+	.body .list-row .replys .post p{
+		display: inline;
+		color: #333;
+		height: 1rem;
+    	line-height: 1rem;
+	}
+
+	.body .list-row .replys .post,
+	.body .list-row .replys .you-reply,
+	.body .list-row .replys .reply-you{
+		width: 100%;
+		max-height: 2rem;
+		font-size: 0.7rem;
+		text-align: left;
+		overflow: hidden;
+		float: left;
+		color: #333;
+	}
+
+	.body .list-row .replys .you-reply{
+		font-size: 0.65rem;
+		margin-top: 0.4rem;
+		margin-bottom: 0.2rem;
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	vertical-align: text-bottom;
+	}
+
+	.body .list-row .replys .reply-you{
+		font-size: 0.6rem;
+		text-align: right;
+	}
+
+	.body .list-row .replys .reply-you .time{
+		margin-right: 8px;
+	}
+
+	.body .list-row .replys .reply-you a{
+		color: rgb(18,150,219);
+	}
+
+	.body .list-row .replys .you-reply p{
+		max-width: 100%;
+		display: inline;
+		margin-right: 5px;
+	}
+
+	.body .no-list{
+		font-weight: 100;
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+
+/*@footer
+******************************************************************************************************/
+	.footer{
+		display: none;
+		position: fixed;
+		width: 1.2rem;
+		bottom: 1.2rem;
+		right: 1.5rem;
+		background-color: rgba(242,242,242,0.7);
+		border-radius: 5px;
+		padding: 0.5rem;
+	}
+
+	.footer img{
+		display: block;
+		width: 100%;
+	}

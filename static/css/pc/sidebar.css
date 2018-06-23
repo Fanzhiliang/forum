@@ -1,0 +1,260 @@
+.main .sidebar{
+	width: 304px;
+	float: left;
+	border-bottom: 1px solid rgb(225,230,235);
+}
+
+.main .sidebar>*{
+	/*border-bottom: 1px solid rgb(225,230,235);*/
+}
+
+.main .sidebar>*:last-child{
+	border-bottom: 0;
+}
+
+.sidebar .no-login a{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #2d64b3;
+}
+
+/*@user-area*/
+.sidebar .user-area{
+	width: 100%;
+	height: 5.5em;
+	float: left;
+	font-size: 20px;
+}
+
+.sidebar .user-area .left-col{
+	width: 25%;
+	padding: 5%;
+	padding-bottom: 0;
+	float: left;
+	display: inline-block;
+}
+
+.sidebar .user-area .left-col>img{
+	width: 100%;
+	padding: 2px;
+	border: 1px solid #ddd;
+}
+
+.sidebar .user-area .right-col{
+	width: 60%;
+    padding-top: 7%;
+    float: left;
+    text-align: left;
+}
+
+.sidebar .user-area .right-col .name{
+	font-size: 0.9em;
+}
+
+.sidebar .user-area .right-col .name-text{
+	max-width: 7em;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 0.8em;
+	color: #2d64b3;
+}
+
+.sidebar .user-area .right-col .name .sex{
+	display: inline-block;
+	height: 1em;
+	vertical-align: top;
+}
+
+.sidebar .user-area .right-col .name .level{
+	display: inline-block;
+	width: 1.25em;
+	height: 1.25em;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.sidebar .user-area .right-col .name .level img{
+	height: 100%;
+	display: inline-block;
+}
+
+.sidebar .user-area .right-col .credits{
+	font-size: 0.7em;
+	margin-bottom: 0.2em;
+}
+
+.sidebar .user-area .right-col .credits-rate{
+	width: 5em;
+	height: 12px;
+	border: 1px solid rgb(157,193,142);
+	border-radius: 3px;
+	background-color: #fff;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sidebar .user-area .right-col .credits-move{
+	/*width: 50%;*/
+	height: 100%;
+	background-color: rgb(185,215,255);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.sidebar .user-area .right-col .rate-text{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 9px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	.sidebar .user-area .right-col .rate-text{
+		font-size: 12px;
+		top: -3px;
+	}
+}
+
+.sidebar .user-area .right-col .molecular{
+	color: #FF7F3E;
+}
+
+.sidebar .user-area .right-col .denominator{
+	color: #999;
+}
+
+.sidebar .user-area .right-col .btn{
+	font-size: 0.65em;
+	padding: 0.2em 0.6em;
+	text-align: center;
+	margin-top: 0.3em;
+	border-radius: 5px;
+}
+
+.sidebar .user-area .right-col .sign-in{
+	background-color: rgb(18,150,219);
+	color: #fff;
+}
+
+.sidebar .user-area .right-col .logout{
+	background-color: rgb(204,50,47);
+	color: #fff;
+}
+
+.sidebar .user-area .right-col .sign-in.final{
+	display: inline;
+	color: rgb(220,220,220);
+	background-color: rgb(242,242,242);
+	font-size: 0.65em;
+	padding: 0.2em 0.6em;
+	border-radius: 5px;
+}
+
+.sidebar .user-area .right-col .toggle-row>a{
+	font-size: 0.7em;
+	color: #2d64b3;
+	margin-right: 0.5em;
+}
+
+.sidebar .user-area .toggle-row{
+	width: 100%;
+	float: left;
+	margin-top: 0.2em;
+}
+
+.sidebar .user-area .toggle-row a{
+	display: inline-block;
+	color: #333;
+}
+
+/*@ctrl*/
+.sidebar .ctrl{
+	float: left;
+	width: 100%;
+	text-align: left;
+	padding-left: 5%;
+	/*background-color: #DCEFFE;*/
+	height: 35px;
+}
+
+.sidebar .ctrl .ctrl-item{
+	width: 35px;
+	display: inline-block;
+	/*background-color: #ECF2FE;*/
+	padding-bottom: 35px;
+	position: relative;
+	cursor: pointer;
+}
+
+.sidebar .ctrl .ctrl-item img{
+	width: 70%;
+	display: inline-block;
+	position: absolute;
+	height: 70%;
+	top: 13%;
+	left: 15%;
+}
+
+
+
+/*@download-app*/
+.sidebar .download-app{
+	float: left;
+	width: 100%;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.sidebar .download-app .title-1{
+	padding-left: 5%;
+	font-size: 15px;
+	font-weight: 600;
+	float: left;
+	width: 95%;
+	margin: 5% 0;
+}
+
+.sidebar .download-app .title-2{
+	float: left;
+	font-size: 12px;
+	margin-left: 5%;
+	width: 40%;
+	margin-right: 5%;
+}
+
+.sidebar .download-app .up-row,
+.sidebar .download-app .down-row{
+	color: #666;
+	margin: 5%;
+}
+
+
+.sidebar .download-app .code{
+	float: left;
+	width: 20%;
+	padding-bottom: 20%;
+	position: relative;
+	margin-right: 3%;
+}
+
+.sidebar .download-app .logo{
+	float: left;
+	width: 20%;
+	padding-bottom: 20%;
+	position: relative;
+}
+
+.sidebar .download-app .code img,
+.sidebar .download-app .logo img{
+	display: inline-block;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}

@@ -1,0 +1,469 @@
+@import url(../reset.css);
+@import url(header.css);
+@import url(sidebar.css);
+
+/*@header
+************************************************************************************************/
+	html,.header{
+		min-width: 1024px;
+	}
+	.header .header-primary{
+		width: 1024px;
+		display: inline-block;
+	}
+
+/*@main
+************************************************************************************************/
+	.main{
+		width: 100%;
+		min-width: 1024px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 80px;
+		background-color: rgb(242,242,242);
+		text-align: center;
+	}
+
+	.main .main-primary{
+		width: 1024px;
+		display: inline-block;
+		position: relative;
+		overflow: hidden;
+		margin-top: 20px;
+		background-color: #fff;
+		border: 1px solid rgb(225,230,235);
+	}
+	/*@body
+	**************************************************************************/
+	.main .body{
+		width: 720px;
+		float: left;
+		border-right: 1px solid rgb(225,230,235);
+		padding-bottom: 10px;
+		text-align: left;
+		overflow: hidden;
+		padding-top: 60px;
+		position: relative;
+	}
+
+	.body .title{
+		font-size: 20px;
+	    padding: 15px 36px;
+	    padding-right: 42px;
+	    width: 640px;
+	    border-bottom: 1px solid rgb(225,230,235);
+	    border-left: 1px solid transparent;
+	    height: 29px;
+	    position: absolute;
+	    top: 0;
+	    background-color: #fff;
+	    z-index: 10100;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+
+	.body .title #keep{
+		position: absolute;
+		right: 10px;
+	}
+
+	.body .title #keep img{
+		width: 30px;
+	}
+
+	.body .floor{
+		display: inline-block;
+		width: 100%;
+		float: left;
+		border-bottom: 1px solid rgb(225,230,235);
+		overflow: hidden;
+	}
+
+	.body .floor .author{
+		display: inline-block;
+		width: 150px;
+		height: 100%;
+		float: left;
+		background-color: rgb(251,251,253);
+		text-align: center;
+		position: relative;
+	}
+
+	.body .floor .louzhu-img{
+		width: 36px;
+		height: 36px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.body .floor .head{
+		display: inline-block;
+		width: 84px;
+		height: 0;
+		padding-bottom: 84px;
+		position: relative;
+		margin-top: 20px;
+	}
+
+	.body .floor .head img{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		padding: 2px;
+		border: 1px solid #aaa;
+	}
+
+	.body .floor .name{
+		width: 100%;
+		text-align: center;
+	}
+
+	.body .floor .name .name-text{
+		color: #333;
+		display: inline-block;
+		max-width: 100px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 12px;
+	}
+
+	.body .floor .name .icon-row{
+		display: inline-block;
+		width: 100%;
+	}
+
+	.body .floor .name .sex{
+		height: 16px;
+		vertical-align: top;
+	}
+
+	.body .floor .name .level{
+		height: 25px;
+		margin-top: -5px;
+	}
+
+	.body .floor .value{
+		display: inline-block;
+		width: 529px;
+		min-height: 110px;
+		float: left;
+		background-color: #fff;
+		padding: 20px 15px 0 25px;
+	}
+
+	.body .floor .value p{
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		color: #333;
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	.body .floor .value p img{
+		max-width: 100%;
+	}
+
+	.body .floor .bottom-row{
+		width: 540px;
+		height: 27px;
+		overflow: hidden;
+		float: right;
+		margin-right: 10px;
+		text-align: right;
+		font-size: 12px;
+	}
+
+	.body .floor .bottom-row .time{
+		display: inline-block;
+		color: #aaa;
+	}
+
+	.body .floor .bottom-row .toggle-reply,
+	.body .floor .bottom-row .goto-reply{
+		display: inline-block;
+		color: #2d64b3;
+		cursor: pointer;
+		padding: 5px;
+	}
+
+	.body .floor .delete,
+	.body .floor .delete-floor,
+	.body .floor .delete-postings,
+	.body .floor .delete-reply{
+		color: rgb(211,75,57);
+		margin-left: 5px;
+	}
+
+	.body .floor .replys{
+		opacity: 0;
+		width: 537px;
+		float: right;
+		margin-right: 10px;
+		margin-bottom: 5px;
+		background-color: rgb(247,248,250);
+		border: 1px solid rgb(225, 230, 235);
+		overflow: hidden;
+	}
+
+	.body .floor .replys .reply{
+		padding-top: 10px;
+	}
+
+
+	.body .floor .replys .left-col{
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+		vertical-align: top;
+		margin-left: 6px;
+		margin-right: 5px;
+		padding: 2px;
+		border: 1px solid rgb(225,230,235);
+	}
+
+	.body .floor .replys .left-col img{
+		width: 100%;
+		height: 100%;
+	}
+
+	.body .floor .replys .right-col{
+		display: inline-block;
+		width: 475px;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.body .floor .replys .up-row{
+
+	}
+
+	.body .floor .replys .up-row p{
+		display: inline-block;
+	}
+
+	.body .floor .replys .up-row img{
+		display: inline-block;
+	}
+
+	.body .floor .replys .name{
+		color: rgb(18,150,219);
+	}
+
+	.body .floor .replys .down-row{
+		text-align: right;
+		width: 470px;
+	}
+
+	.body .floor .replys .time{
+		color: #aaa;
+		margin-right: 5px;
+	}
+
+	.body .floor .replys .delete{
+		color: rgb(211,75,57);
+	}
+
+	.body .floor .reply-bottom{
+		width: 100%;
+		float: left;
+		margin-top: 5px;
+	}
+
+	.body .floor .reply-bottom p{
+		word-wrap: break-word;
+		/*display: inline-block;*/
+	}
+
+	.body .floor .reply-pager{
+		display: inline-block;
+		float: left;
+		margin-left: 10px;
+	}
+
+	.body .floor .reply-pager li{
+		display: inline-block;
+		font-size: 13px;
+		margin: 0 3px;
+	}
+
+	.body .floor .reply-pager a{
+		color: #2d64b3;
+		cursor: pointer;
+	}
+
+	.body .floor .reply-pager a.selected{
+		color: #333;
+		cursor: text;
+	}
+
+	.body .floor .emoticon{
+		display: inline-block;
+		float: right;
+	}
+
+	.body .floor .publish-reply{
+		border: 0;
+		outline: 0;
+		background-color: rgb(18,150,219);
+		color: #fff;
+		font-size: 13px;
+		border-radius: 3px;
+		padding: 3px 8px;
+		float: right;
+		cursor: pointer;
+		margin-right: 10px;
+		margin-top: 3px;
+	}
+
+	.body .floor .reply-editor{
+		display: inline-block;
+		float: left;
+		clear: both;
+		font-size: 12px;
+		width: 96%;
+		height: 40px;
+		margin: 5px 2% 10px 2%;
+		background-color: #fff;
+		border: 1px solid rgb(225,230,235);
+	}
+
+	.body .floor .reply-editor>*{
+		overflow-y: scroll;
+	}
+
+/*@pager
+************************************************************************************************/
+	.pager{
+		overflow: hidden;
+		font-size: 12px;
+		padding-left: 15px;
+		padding-bottom: 20px;
+		padding-top: 15px;
+		border-bottom: 1px solid rgb(225,230,235);
+	}
+
+	.pager li{
+		display: inline-block;
+		float: left;
+		border: 1px solid #e6e6e6;
+		margin-right: 5px;
+	}
+
+	.pager li a{
+		padding: 2px 5px;
+		display: inline-block;
+		color: #666;
+	}
+
+	.pager li span{
+		display: inline-block;
+		position: relative;
+		top: -1px;
+	}
+
+	.pager li:hover{
+		border-color: #2d64b3;
+	}
+
+	.pager li:hover a{
+		color: #2d64b3;
+	}
+
+	.pager li.on{
+		border: 0;
+	}
+
+	.pager li.on a{
+		font-weight: 600;
+	}
+
+/*@editor
+************************************************************************************************/
+	.editor-row{
+		min-height: 400px;
+		/*background-color: rgb(220,239,254);*/
+		position: relative;
+	}
+
+	.editor-row .editor-header{
+		text-align: left;
+		padding-left: 15px;
+	}
+
+	.editor-row .editor-header img{
+		display: inline-block;
+		width: 20px;
+		vertical-align: text-bottom;
+	}
+
+	.editor-row .editor-header .text{
+		display: inline-block;
+		line-height: 40px;
+	}
+
+	.editor-row .editor-frame{
+		text-align: left;
+	}
+
+	.editor-row #title{
+		width: 682px;
+		outline: 0;
+		margin: 10px 0 10px 10px;
+		font-size: 18px;
+		padding: 5px;
+		padding-left: 10px;
+		border: 1px solid rgb(225,230,235);
+	}
+
+	.editor-row .toolbar{
+		padding: 0;
+		margin-left: 10px;
+		border: 1px solid rgb(225,230,235);
+		margin-right: 10px;
+	}
+
+	.editor-row .toolbar>*{
+
+	}
+
+	.editor-row #editor{
+		margin-left: 10px;
+		text-align: left;
+		border: 1px solid rgb(225,230,235);
+		border-top-color: rgb(225, 230, 235);
+		margin-right: 10px;
+		border-top-color: transparent;
+		min-height: 300px;
+	}
+
+	.editor-row #editor p{
+		word-wrap: break-word;
+	}
+
+	.editor-row #editor>*{
+		min-height: 300px;
+	}
+
+	.editor-row #editor>*{
+		overflow-y: visible;
+	}
+
+	.editor-row #publish{
+		border: 0;
+		outline: 0;
+		background-color: rgb(18,150,219);
+		color: #fff;
+		font-size: 16px;
+		margin-right: 10px;
+		margin-top: 10px;
+		border-radius: 3px;
+		padding: 3px 8px;
+		float: right;
+		cursor: pointer;
+	}
+

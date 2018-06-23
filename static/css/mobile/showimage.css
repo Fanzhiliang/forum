@@ -1,0 +1,46 @@
+@import url(../reset.css);
+html,body{
+	height: 100%;
+}
+/*@main
+************************************************************************************************/
+	.wrap{
+		min-height: 100%;
+		background-color: #000;
+		text-align: center;
+		position: relative;
+	}
+
+	.main{
+		width: 96%;
+		padding: 0 2%;
+		background-color: #000;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.back{
+		width: 0.8rem;
+		position: fixed;
+		left: 0.5rem;
+		top: 0.5rem;
+		z-index: 99;
+		cursor: pointer;
+	}
+
+	.save{
+		color: #fff;
+		font-size: 16px;
+		position: fixed;
+		right: 0.5rem;
+		top: 0.3rem;
+		z-index: 99;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+	.main-img{
+		width: 100%;
+	}

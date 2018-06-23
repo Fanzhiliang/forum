@@ -1,0 +1,98 @@
+body{
+	position: relative;
+	font-family: "微软雅黑",Helvetica Neue,Helvetica,Arial,Microsoft Yahei;
+	background-color: rgb(242,242,242);
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	box-shadow: 0 -2px 5px #888888;
+	z-index: 10100;
+	background-color: #fff;
+}
+
+.header .header-primary{
+	height: 80px;
+	width: 80%;
+	min-width: 1024px;
+	display: inline-block;
+}
+
+.header .header-seach{
+	width: 100%;/*width: 718px;*/
+	height: 54px;
+	float: left;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background-color: #fff;
+}
+
+.header .header-seach>a{
+	display: inline-block;
+}
+
+.header .header-seach>a.logo{
+	height: 54px;
+}
+
+.header .header-seach>a img{
+	height: 100%;
+	display: block;
+}
+
+.header .left{
+	float: left;
+	margin-right: 13.32px;
+}
+
+.header .right{
+	float: right;
+	margin-left: 13.32px;
+}
+
+.header .center{
+	display: inline-block;
+}
+
+.header .header-primary .search-frame{
+	width: 480px;
+	height: 40px;
+	margin-top: 5px;
+	float: right;
+	background-color: rgb(255,255,255);
+}
+
+.header #search{
+	width: 430px;
+	float: left;
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(197,197,197);
+	height: 40px;
+	border-radius: 5px;
+}
+
+.header #search #keywords{
+	width: 96%;
+    height: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.header #toggle-search{
+	width: 30px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+.header #toggle-search img{
+	width: 100%;
+	display: inline-block;
+}

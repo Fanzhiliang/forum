@@ -1,0 +1,133 @@
+@import url(../reset.css);
+@import url(header.css);
+/*@main
+************************************************************************************************/
+	.main{
+		width: 100%;
+		float: left;
+		margin-top: 2rem;
+		background-color: rgb(242,242,242);
+		text-align: center;
+	}
+
+	.main .body{
+		width: 96%;
+		display: inline-block;
+	}
+
+	/*@postings**************************************************/
+	.main .body .postings{
+		width: 100%;
+		margin-top: 3%;
+		background-color: #fff;
+		border-radius: 3px;
+		display: inline-block;
+		color: #333;
+	}
+
+	.main .body .postings .up-row{
+		overflow: hidden;
+		padding: 0.5rem;
+		padding-bottom: 0;
+	}
+
+	.main .body .postings .left-col{
+		float: left;
+    	width: 2rem;
+    	margin-right: 0.5rem;
+	}
+
+	.main .body .postings .left-col img{
+		width: 100%;
+    	border-radius: 8px;
+	}
+
+	.main .body .postings .middle-col{
+		float: left;
+	    width: 8rem;
+	    text-align: left;
+	    height: 2rem;
+	}
+
+	.main .body .postings .author{
+	    font-size: 0.7rem;
+	    color: #333;
+	}
+
+	.main .body .postings .age{
+		font-size: 0.6rem;
+    	color: #aaa;
+	}
+
+	.main .body .postings .right-col{
+		float: right;
+    	width: 2rem;
+    	margin-top: 0.1rem;
+	}
+
+	.main .body .postings .right-col img{
+		width: 0.8rem;
+		display: inline-block;
+		float: left;
+	}
+
+	.main .body .postings .reply-count{
+	    width: 1rem;
+	    font-size: 0.5rem;
+	    display: inline-block;
+	    float: left;
+	    color: #aaa;
+	}
+
+	.main .body .postings .down-row{
+		overflow: hidden;
+		padding: 0.5rem;
+		padding-top: 0;
+		text-align: left;
+	}
+
+	.main .body .postings .title{
+		font-size: 0.8rem;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+	}
+
+	.main .body .no-postings{
+		font-weight: 100;
+		margin-top: 1rem;
+	}
+
+/*@footer
+************************************************************************************************/
+	.footer{
+		width: 100%;
+		float: left;
+		position: relative;
+		height: 2rem;
+	}
+
+	.pager{
+		width: 100%;
+		height: 100%;
+	    float: left;
+	    background-color: #fff;
+	}
+
+	.pager>div{
+		width: 33.33%;
+		height: 100%;
+	    display: inline-block;
+	    float: left;
+	    text-align: center;
+	}
+
+	.pager>div>*{
+		margin-top: 0.5rem;
+		display: inline-block;
+		font-size: 0.7rem;
+	}
+
+	.pager>div img{
+		width: 1rem;
+	}

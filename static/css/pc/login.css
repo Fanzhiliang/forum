@@ -1,0 +1,227 @@
+@import url(../reset.css);
+@import url(header.css);
+html,body,.wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*@main
+************************************************************************************************/
+	.main{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 80px;
+		background-color: rgb(242,242,242);
+		text-align: center;
+	}
+
+	.main .main-primary{
+		width: 80%;
+		min-width: 1024px;
+		display: inline-block;
+		position: relative;
+		top: 25%;
+		overflow: hidden;
+	}
+
+	.main .sidebar{
+		width: 535px;
+		height: 305px;
+		margin: 5px;
+		float: left;
+	}
+
+	.main .sidebar a,
+	.main .sidebar img{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.main .body{
+		width: 382px;
+		padding: 30px;
+		margin: 5px;
+		font-size: 20px;
+		float: right;
+		background-color: #fff;
+		border-radius: 5px;
+		box-shadow: 0 0 5px #888888;
+	}
+
+	.main .form-row{
+		width: 100%;
+		margin-bottom: 0.8em;
+		float: left;
+	}
+
+	.main .form-row.error-tip{
+		color: rgb(218,46,22);
+		font-size: 16px;
+	}
+
+	.main .form-row.error-tip a{
+		color: #26d0c1;
+	}
+
+	.main .form-row .input-frame{
+		height: 2em;
+		background-color: rgb(255,255,255);
+		border: 1px solid rgb(197,197,197);
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	.main .form-row .input-frame.selected{
+		border-color: rgb(102,175,233);
+		box-shadow: 0px 0px 5px rgb(102,175,233);
+		-ms-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-moz-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-webkit-box-shadow: 0px 0px 5px rgb(102,175,233);
+		-o-box-shadow: 0px 0px 5px rgb(102,175,233);
+	}
+
+	.main .form-row .input-frame.warn{
+		border-color: rgb(218,46,22);
+		box-shadow: 0px 0px 5px rgb(218,46,22);
+		-ms-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-moz-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-webkit-box-shadow: 0px 0px 5px rgb(218,46,22);
+		-o-box-shadow: 0px 0px 5px rgb(218,46,22);
+	}
+
+	.main .form-row .input-frame label{
+		color: rgb(204,204,204);
+		height: 1em;
+		margin: 0.7em;
+		display: block;
+		font-size: 0.75em;
+		letter-spacing: 0.2em;
+		float: left;
+	}
+
+	.main .form-row .input-frame em{
+		width: 0;
+		border-left: 1px solid rgb(204,204,204);
+		height: 1.6em;
+		display: block;
+		margin-top: 0.2em;
+		float: left;
+	}
+
+	.main .form-row .input-frame input{	
+		width: 12em;
+		height: 1em;
+		margin: 0.7em;
+		border: 0;
+		outline: 0;
+		font-size: 0.75em;
+		color: #333;
+		float: left;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: rgb(204,204,204); opacity:1; 
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .input-frame input:-ms-input-placeholder{
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .input-frame input::-webkit-input-placeholder{
+	    color: rgb(204,204,204);opacity:1;
+	}
+
+	.main .form-row .tc{
+		color: rgb(46,204,113);
+		font-size: 0.8em;
+	}
+
+	.main .form-row .tl{
+		color: rgb(46,204,113);
+		float: left;
+		font-size: 0.8em;
+	}
+
+	.main .form-row .tr{
+		color: rgb(46,204,113);
+		float: right;
+		font-size: 0.8em;
+	}
+
+	.main .form-row .forget{
+		color: rgb(218,46,22);
+	}
+
+	.main .form-row button{
+		width: 100%;
+		height: 2em;
+		background-color: #26d0c1;
+		border: 0;
+		border-radius: 5px;
+		color: #fff;
+		font-size: 1em;
+		letter-spacing: 1em;
+		text-align: right;
+		padding-left: 0;
+		padding-right: 5.3em;
+		box-shadow: 0px 0px 5px #888888;
+		-ms-box-shadow: 0px 0px 5px #888888;
+		-moz-box-shadow: 0px 0px 5px #888888;
+		-webkit-box-shadow: 0px 0px 5px #888888;
+		-o-box-shadow: 0px 0px 5px #888888;
+	}
+
+	.drag{
+		position: relative;
+	}
+
+	.drag .drag-bg{
+		width: 0;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #26d0c1;
+	}
+
+	.drag .drag-text{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	.drag .drag-text span{
+		display: inline-block;
+		line-height: 2.5em;
+		font-size: 0.8em;
+	}
+
+	.drag .drag-obj{
+		width: 2em;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		margin-left: -1px;
+		border-radius: 5px;
+		border-left: 1px solid rgb(197,197,197);
+		border-right: 1px solid rgb(197,197,197);
+		cursor: move;
+		background-color: #fff;
+	}
+
+	.drag .drag-obj img{
+		display: inline-block;
+		height: 1em;
+    	margin-top: 0.5em;
+	}
