@@ -46,7 +46,7 @@ try {
 	<!-- 初始比例=1 最大缩放=1 禁止缩放=移动端 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 使ie以最高级渲染 -->
-	<title>论坛帖子</title>
+	<title><?php echo $thatPostings['title'];?></title>
 	<script src="<?php echo $PREFIX;?>/static/js/init.js"></script>
 	<link rel="stylesheet" href="<?php echo $PREFIX;?>/static/css/mobile/postings.css">
 </head>

@@ -48,7 +48,7 @@ try {
 	<!-- 初始比例=1 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 使ie以最高级渲染 -->
-	<title>论坛贴子</title>
+	<title><?php echo $thatPostings['title'];?></title>
 	<script src="<?php echo $PREFIX;?>/static/js/init.js"></script>
 	<!-- [if lt IE 9]>
 		<script src="<?php echo $PREFIX;?>/static/js/html5shiv.min.js"></script>
