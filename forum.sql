@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : xl
-Source Server Version : 50710
-Source Host           : localhost:3306
+Source Server         : alcyh
+Source Server Version : 50557
+Source Host           : 120.78.128.4:3306
 Source Database       : forum
 
 Target Server Type    : MYSQL
-Target Server Version : 50710
+Target Server Version : 50557
 File Encoding         : 65001
 
-Date: 2018-06-23 21:05:14
+Date: 2018-06-24 15:02:29
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,7 +28,7 @@ CREATE TABLE `tb_floor` (
   `is_ban` int(11) NOT NULL DEFAULT '0',
   `floor_no` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`floor_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_floor
@@ -73,6 +73,7 @@ INSERT INTO `tb_floor` VALUES ('37', '1', '2', '[{\"tag\":\"p\",\"children\":[\"
 INSERT INTO `tb_floor` VALUES ('38', '1', '2', '[{\"tag\":\"p\",\"children\":[\"楼层分页12 \",{\"tag\":\"br\"}]}]', '1528819735', '0', '16');
 INSERT INTO `tb_floor` VALUES ('39', '1', '1', '[{\"tag\":\"p\",\"children\":[\"端午\"]}]', '1528980981', '0', '17');
 INSERT INTO `tb_floor` VALUES ('40', '22', '1', '[{\"tag\":\"p\",\"children\":[\"ddd\",{\"tag\":\"br\"}]}]', '1529400447', '0', '1');
+INSERT INTO `tb_floor` VALUES ('44', '23', '1', '[{\"tag\":\"p\",\"children\":[\"1\",{\"tag\":\"br\"}]}]', '1529823397', '0', '1');
 
 -- ----------------------------
 -- Table structure for `tb_img`
@@ -223,7 +224,7 @@ CREATE TABLE `tb_postings` (
   `is_ban` int(11) NOT NULL DEFAULT '0',
   `reply_count` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`postings_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_postings
@@ -250,6 +251,7 @@ INSERT INTO `tb_postings` VALUES ('19', '1', '分页18', '1528808804', '15288088
 INSERT INTO `tb_postings` VALUES ('20', '1', '分页19', '1528808808', '1528808808', '0', '1');
 INSERT INTO `tb_postings` VALUES ('21', '1', '分页20', '1528808815', '1528808815', '0', '1');
 INSERT INTO `tb_postings` VALUES ('22', '1', 'ddd', '1529400447', '1529400447', '1', '1');
+INSERT INTO `tb_postings` VALUES ('23', '1', '新的一天', '1529823397', '1529823397', '0', '1');
 
 -- ----------------------------
 -- Table structure for `tb_reply`
@@ -308,6 +310,6 @@ CREATE TABLE `tb_user` (
 -- ----------------------------
 -- Records of tb_user
 -- ----------------------------
-INSERT INTO `tb_user` VALUES ('1', '505911050@qq.com', '9099e3d26ce489a3b7d6b7c3124773c9', 'fzl', '1529666642', '1', '505911050@qq.com', '1529746098', '1', '1', 'http://forum.thxyfreenet.cn/resources/1529416649.jpg', '193', '3', '172f9f9928e6d5ea7a7106ca0e450241');
+INSERT INTO `tb_user` VALUES ('1', '505911050@qq.com', '9099e3d26ce489a3b7d6b7c3124773c9', 'fzl', '1529820269', '1', '505911050@qq.com', '1529746098', '1', '1', 'http://forum.thxyfreenet.cn/resources/1529416649.jpg', '198', '3', '172f9f9928e6d5ea7a7106ca0e450241');
 INSERT INTO `tb_user` VALUES ('2', '10010@qq.com', '98ead8f38eacfc128b97593a413fb465', '色魔2号', '1529402017', '0', '10010@qq.com', '0', '1', '1', 'http://forum.thxyfreenet.cn/resources/1528719116.jpg', '85', '2', null);
 INSERT INTO `tb_user` VALUES ('26', '2281588099@qq.com', '25f9e794323b453885f5181f1b624d0b', 'xxl', '1529738909', '1', '2281588099@qq.com', '1529745970', '1', '1', 'http://localhost/resources/1529742441.jpg', '5', '1', '046cf90c0daf5aebce73cddb63835864');
