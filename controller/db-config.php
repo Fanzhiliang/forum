@@ -3,13 +3,13 @@ return [
 	'dbms' => 'mysql',
 	'dbName' => 'forum',
 	#forum.alcyh.com
-	// 'user' => 'forum',
-	// 'pwd' => '47789.321',
-	// 'host' => 'localhost',
-	#localhost
-	'user' => 'root',
-	'pwd' => '123',
+	'user' => 'forum',
+	'pwd' => '47789.321',
 	'host' => 'localhost',
+	#localhost
+	// 'user' => 'root',
+	// 'pwd' => '123',
+	// 'host' => 'localhost',
 	'charset' => 'utf8',
 	'poolsize' => 10,
 	'pageSize' => 15,//首页，贴子分页每页的记录数

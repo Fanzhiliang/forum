@@ -6,6 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>提示</title>
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $PREFIX;?>/static/img/logo.ico">
 </head>
 <style>
 	h1{

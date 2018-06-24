@@ -49,6 +49,7 @@ try {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- 使ie以最高级渲染 -->
 	<title><?php echo $thatPostings['title'];?></title>
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $PREFIX;?>/static/img/logo.ico">
 	<script src="<?php echo $PREFIX;?>/static/js/init.js"></script>
 	<!-- [if lt IE 9]>
 		<script src="<?php echo $PREFIX;?>/static/js/html5shiv.min.js"></script>
