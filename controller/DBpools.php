@@ -3,11 +3,12 @@ class DBpools{
 	static $_pools = [];
 	static $_config =[];
 	const filePaths = [
-		"controller/db-config.php",
-		"db-config.php"
+		"config/db-config.php",
+		"../config/db-config.php"
 	];
 	
 	function __construct(){
+		error_reporting(E_WARNING);//关闭警告提示
 		if(count(self::$_config)<1){
 			foreach (self::filePaths as $path) {
 				if(file_exists($path)){

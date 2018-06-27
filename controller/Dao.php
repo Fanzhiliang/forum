@@ -4,8 +4,8 @@ header("Content-Type:text/html;charset=utf-8");
 class Dao{
 	static $_level_config = [];
 	const filePaths = [
-		"controller/level-config.php",
-		"level-config.php"
+		"config/level-config.php",
+		"../config/level-config.php"
 	];
 	private $connect = null;
 
@@ -765,7 +765,7 @@ class Dao{
 	}
 
 	public function deleteReply($replyId){//删除回复 不是真正删除 是把is_ban改为1
-		$reply = getReplyById($replyId);
+		$reply = $this->getReplyById($replyId);
 		$sqlList = [
 			"update tb_reply set is_ban = 1 where reply_id = ".$replyId,
 			"update tb_postings set reply_count=reply_count-1 where postings_id=".$reply['postings_id']

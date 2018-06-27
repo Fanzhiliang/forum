@@ -2,6 +2,14 @@
 	$get = $_POST['body'];
 	$send = ['code' => 500,'data' => ['message' => '']];
 
+	// 获得登录的用户没有也没事
+	session_id($get['session_id']);
+	session_start();
+	$user = $_SESSION['user'];
+	if(!$user){
+		$user['user_id'] = 0;
+	}
+
 	if(isset($get['pageNo']) && isset($get['floor_id'])){
 		include_once('Dao.php');
 		$dao = new Dao();
@@ -15,11 +23,13 @@
 				$list = [];
 				foreach ($replyData['list'] as $reply) {
 					$replyUser = $dao->getUserById($reply['user_id']);
+					$ableDelete = $user['user_id']==$replyUser['user_id']?$reply['reply_id']:0;
 					$list[] = [
 						'head' => $replyUser['head_img'],
 						'author' => $replyUser['name'],
 						'time' => $reply['time'],
-						'value' => strToTags(json_decode($reply['value'],true),false)
+						'value' => strToTags(json_decode($reply['value'],true),false),
+						'ableDelete' => $ableDelete
 					];
 				}
 				$send['code'] = 200;

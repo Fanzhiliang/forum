@@ -73,6 +73,7 @@ $(".delete-floor,.delete-postings").click(function(event){
 				data: {body:result},
 				//dataType: 'json',
 				success: function(data){
+					console.log(data)
 					if(typeof data == 'string'){
 						data = eval('('+data+')');
 					}
@@ -109,7 +110,7 @@ if(myForm && pageNo && !isNaN(totalPage) && totalPage>0){
 }
 
 //删除回复
-$(".delete-reply").click(function(event){
+$('body').delegate(".delete-reply",'click',function(event){
 	event.preventDefault();
 	var that = $(this);
 	tip.showTip('确认删除?',{
@@ -348,6 +349,7 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 				url: '../controller/reply_page.php',
 				type: 'POST',
 				data: {body:{
+					'session_id': $.trim($("#session_id").val()),
 					'pageNo': page,
 					'floor_id': floorId
 				}},
@@ -365,10 +367,25 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 							newHeight = 0//新高度
 						for(i in data.list){
 							item = data.list[i]
-							replyList += '<div class="reply"><a href="" class="left-col"><img src="'+item.head+'" alt="头像"></a><div class="right-col"><div class="up-row"><a href="" class="name">'+item.author+':</a>'+item.value+'</div><div class="down-row"><span class="time">'+item.time+'</span><a href="" class="delete">删除</a></div></div></div>'
+							replyList += '<div class="reply"><span class="left-col"><img src="'+item.head+'" alt="头像"></span><div class="right-col"><div class="up-row"><a href="" class="name">'+item.author+':</a>'+item.value+'</div><div class="down-row"><span class="time">'+item.time+'</span>';
+							if(item.ableDelete > 0){
+								replyList += '<a href="'+item.ableDelete+'" class="delete-reply">删除</a>';
+							}
+							replyList += '</div></div></div>';
 						}
+						//删除旧生成新
 						replyFrame.find("*").remove()
 						replyFrame.html(replyList)
+						//每个回复中如果p只要一个css为inline-block  多于1则为block
+						$(".reply,.reply-row").each(function(){
+							var ps = $(this).find("p");
+							if(ps.length==1){
+								ps.css('display','inline-block');
+							}else{
+								ps.css('display','block');
+							}
+						})
+						//重设高度
 						newHeight = parseInt(replyFrame.css('height'))
 						var gap = newHeight - oldHeight,
 							a = parseInt(floor.attr('floorHeight')) + gap,
@@ -402,6 +419,7 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 						pageList += '<li><a href="'+totalPage+'">尾页</a></li>'
 						replyPager.find("*").remove()
 						replyPager.html(pageList)
+
 					}	
 				}
 			})

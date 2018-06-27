@@ -21,7 +21,6 @@
 	if(!$user){
 		notLogin();
 	}
-	
 	include_once 'Dao.php';
 	$dao = new Dao();
 
