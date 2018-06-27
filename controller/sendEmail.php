@@ -4,6 +4,10 @@ header("Content-Type:text/html;charset=utf-8");
 function sendEmail($smtpemailto,$mailtitle,$mailcontent){//发给谁  标题  内容
 	include_once('SMTP.class.php');
 	$smtp_config = include_once('../config/SMTP-config.php');
+	if(count($smtp_config) < 1){
+		header("location:/tip?message=".urlencode('smtp配置文件出错或不存在'));
+		die;
+	}
 	$smtpserver = $smtp_config['smtpserver'];//SMTP服务器
 	$smtpserverport = $smtp_config['smtpserverport'];//SMTP服务器端口
 	$smtpusermail = $smtp_config['smtpusermail'];//SMTP服务器的用户邮箱

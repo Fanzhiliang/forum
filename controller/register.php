@@ -28,6 +28,7 @@
 				$state = sendEmail($smtpemailto,'forum论坛注册',$mailcontent);
 				if(!$state){//邮件发送失败
 					header("location:/register?message=".urlencode('邮件发送失败'));
+					die;
 				}
 				header("location:/tip?message=注册成功,请前往你的邮箱验证");//成功
 		}
