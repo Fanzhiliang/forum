@@ -10,7 +10,6 @@
 	}
 	setcookie(session_name(),session_id(),time()+(24*3600),"/");
 	$_SESSION["user"] = $currUser;
-	
 ?>
 <!DOCTYPE html>
 <html lang="en">

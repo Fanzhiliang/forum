@@ -169,7 +169,6 @@ $(".reply,.reply-row").each(function(){
 	}
 })
 
-
 if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 	var rem = parseInt($("html").css('font-size')),
 		imgs = $("p img"),
@@ -426,10 +425,12 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 		}
 	})
 
-	//给楼层设定器本来的高度 让它的子节点height:100% 起作用
-	$(".floor").each(function(){
-		var height = $(this).css('height')
-		$(this).css({height:height})
+	$(window).load(function(){
+		//给楼层设定器本来的高度 让它的子节点height:100% 起作用
+		$(".floor").each(function(){
+			var height = $(this).css('height')
+			$(this).css({height:height})
+		})
 	})
 
 	//展开收起回复

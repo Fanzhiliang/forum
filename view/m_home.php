@@ -182,7 +182,7 @@
 								<div class="time"><?php echo $keep['time'];?></div>
 								<div class="reply-col">
 									<span class="reply-count"><?php echo $keep['reply_count'];?></span>
-									<img src="<?php echo $PREFIX;?>/static/img/reply.svg" alt="评论图标">
+									<img src="<?php echo $PREFIX;?>/static/img/reply.svg" alt="">
 								</div>
 							</a>
 							<?php }}else{ ?>

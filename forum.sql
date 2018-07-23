@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50557
 File Encoding         : 65001
 
-Date: 2018-06-27 15:51:29
+Date: 2018-07-04 16:53:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -314,11 +314,11 @@ CREATE TABLE `tb_user` (
   UNIQUE KEY `account` (`account`),
   UNIQUE KEY `email` (`email`) USING BTREE,
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of tb_user
 -- ----------------------------
-INSERT INTO `tb_user` VALUES ('1', '505911050@qq.com', '19961225', 'fzl', '1529666642', '0', '505911050@qq.com', '1529746098', '1', '1', 'http://forum.thxyfreenet.cn/resources/1529416649.jpg', '193', '3', '172f9f9928e6d5ea7a7106ca0e450241');
+INSERT INTO `tb_user` VALUES ('1', '505911050@qq.com', '19961225', 'fzl', '1530599150', '0', '505911050@qq.com', '1529746098', '1', '0', 'http://forum.thxyfreenet.cn/resources/1529416649.jpg', '198', '3', '172f9f9928e6d5ea7a7106ca0e450241');
 INSERT INTO `tb_user` VALUES ('2', '10010@qq.com', '19961111', '色魔2号', '1529402017', '0', '10010@qq.com', '0', '1', '1', 'http://forum.thxyfreenet.cn/resources/1528719116.jpg', '85', '2', null);
-INSERT INTO `tb_user` VALUES ('26', '2281588099@qq.com', '19960525', 'xxl', '1530080019', '1', '2281588099@qq.com', '1530078043', '1', '1', 'http://fanzhiliang.xin/resources/1530085789.jpg', '10', '1', '01300890d5ebb15d371b09ef2c43fba4');
+INSERT INTO `tb_user` VALUES ('26', '2281588099@qq.com', '19960525', 'xxl', '1530080019', '0', '2281588099@qq.com', '1530078043', '1', '1', 'http://fanzhiliang.xin/resources/1530085789.jpg', '10', '1', '01300890d5ebb15d371b09ef2c43fba4');

@@ -1,13 +1,13 @@
-<?php
+﻿<?php
 return [
 	'dbms' => 'mysql',
 	'dbName' => 'forum',
 	#alcyh.com
-	// 'user' => 'forum',
-	// 'pwd' => '47789.321',
+	'user' => 'forum',
+	'pwd' => '47789.321',
 	#localhost
-	'user' => 'root',
-	'pwd' => '123',
+	//'user' => 'root',
+	//'pwd' => '123',
 	'host' => 'localhost',
 	'charset' => 'utf8',
 	'poolsize' => 10,

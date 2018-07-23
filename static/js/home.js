@@ -245,7 +245,6 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|Phone/i.test(navigator.userAgent)){
 			}
 		}
 	})
-
 }else{//如果是pc端  主要!
 	var	mainPrimary = $(".main-primary .body"),
 		topLimit = parseInt(mainPrimary.offset().top),
